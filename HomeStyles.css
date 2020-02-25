@@ -1,0 +1,228 @@
+body {
+    font-size: 15px;
+    font-size: 0.94rem;
+    font-family: 'Roboto', 'Josefin Slab', "Open sans", Helvetica, Arial, sans-serif;
+}
+
+/* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 5rem;
+}
+
+/***********************************************
+                GENERAL STYLING
+***********************************************/
+h1 {
+    font-family: 'Fredericka the Great', 'Josefin Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Josefin Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Josefin Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/***********************************************
+                    IMAGES
+***********************************************/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.fig-caption-caps {
+    text-align: center;
+    font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-variant: all-petite-caps;
+    font-size: larger;
+    padding: 1em;
+}
+
+.fig-caption {
+    text-align: center;
+    font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em;
+}
+
+/***********************************************
+                    HEADER
+***********************************************/
+.header_img {
+    position: relative;
+    background-image: url("images/hd.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 120px;
+}
+
+.header_txt{
+    text-align: center; 
+    font-family: 'Fredericka the Great', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    color: rgb(182, 62, 78);
+    background-color: rgb(41, 41, 41);
+    padding-top: 20px;
+    margin: 0;
+}
+
+.header_subtext {
+    text-align: center; 
+    font-size: 25px;
+    font-variant: all-small-caps;
+    font-weight: 900;
+    font-family: 'Josefin Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(182, 62, 78);
+    background-color: rgb(41, 41, 41);
+    padding: 4px;
+    margin: 0;
+}
+
+/***********************************************
+                    NAVIGATION
+***********************************************/
+
+/*  Remove bullets margins and padding from the nav list*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(41, 41, 41);
+  }
+
+/* Float the list items and add a grey right border except after the last one*/
+nav ul li {
+    float:left; 
+    border-right: 1.5px solid rgb(182, 62, 78);
+}
+
+li:last-child {
+    border-right: none;
+}
+
+/* Set the navbar appearance for the list elements*/
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+a.navlink:hover {
+    background-color: rgb(55, 135, 82);
+}
+
+/* Color the nav block to indicate what page a user is on */
+.active {
+    background-color: rgb(182, 62, 78);
+}
+
+/***********************************************
+                CONTAINERS
+***********************************************/
+.container {
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 600px;
+}
+.inner1 {
+    float: left;
+    padding: 5em;
+    height: inherit;
+}
+
+.inner2 {
+    float: left;
+    padding: 5em;
+    height: inherit;
+}
+
+.clear {
+    clear: left;
+}
+/***********************************************
+                    TABLES
+***********************************************/
+
+table caption {
+    margin: 0em;
+    background-color: rgb(41, 41, 41);
+    border: 2px solid rgb(182, 62, 78);
+    color: gold;
+    font-weight: 900;
+    font-size: larger;
+    padding: .4em;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: .5em;
+}
+
+tr th {
+    text-align: left;
+    font-weight: 900;
+    background-color: white;
+    color:black;
+    font-style: oblique;
+}
+
+tbody tr {
+    font-weight: 900;
+}
+
+/***********************************************
+                    FOOTER
+***********************************************/
+footer a:link {
+    color: rgb(255, 215, 0, .8);
+}
+
+footer a:visited {
+    color: rgb(182, 62, 78, .8);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;  
+    background: rgb(41, 41, 41);
+    font-size: 15px;
+    color: #999;
+}
+
+footer .divfoot-left {
+    float: left;
+    padding: 12px;
+}
+
+footer .divfoot-right {
+    float: right;
+    padding: 12px;
+}
+
+footer div p {
+    margin: 0;
+    padding: 20;
+    overflow: hidden;
+}
