@@ -9,6 +9,46 @@
         href="../HomeStyles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Roboto|Josefin+Slab&display=swap">
+    <style>
+        #gallery-h1
+            {
+                margin-bottom: 0;
+            }
+
+        #toc {
+            margin: auto;
+            text-align: center;
+        }
+
+        #toc ul {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #toc ul li{
+            float:left;
+            border: 2px solid black;
+            margin: 1em;
+            
+        }
+
+        #toc ul li a{
+            font-size: larger;
+            color: rgb(182, 62, 78);
+            text-decoration: none;
+            margin: 0;
+            padding: 3em;
+        }
+        #toc a:hover {
+            background-color: rgb(153, 162, 180, .5);
+            padding: 0 3em 0 3em;
+            margin: 0;
+        }
+		
+    </style>
 </head>
 
 <body>
@@ -19,7 +59,7 @@
                 <p class="header_subtext">A one of a kind dog.</p>
                 <div class="header_img"></div>
                 <nav>
-                    <ul style="padding:0;">
+                    <ul>
                         <li><a class="navlink" href="../index.html">Home</a></li>
                         <li><a class="navlink" href="about.html">About</a></li>
                         <li><a class="active">Gallery</a></li>
@@ -28,40 +68,85 @@
                     </ul>
                 </nav>
             </header>
+            
             <section id="gallery">
-            <h1>Gallery</h1>
+                <h1 id="gallery-h1">Gallery</h1>
+                <section id="toc">
+                    <ul>
+                        <li><a href="#art">Arrow Art</a></li>
+                        <li><a href="#photos">Photographs</a></li>
+                    </ul>
+                </section>
+                <section id="art" style="clear: both;">
+                <h2>Arrow Art</h2>
+                    <article>
+                        <p>
+                            Due to his striking appearance and commanding presence, Arrow is the subject of numerous works of art, known throughout art circles as arrow-works. 
+                            Arrow-works are unconstrained by stylistic limitations, ranging from whimsicle to unsettling. An exploration of Arrow-works is an exploration of self as you seek to unravel the mysteries of our subject's enigmatic countenance.
+                            We hope you enjoy browsing this selection of of Arrow-work as much as we enjoyed creating it.
+                        </p>
+                    </article>
+                    <section id="gallery-imgs">
+                        <div class="row">
+                            <div class="column">
+                                <img src="../images/arrow-deco.jpg" alt="A dog wearing a bowtie with a swirled background" style="width: 100%">
+                            </div>
+                            <div class="column">
+                                <img src="../images/arrow-tardis1.jpg" alt="A dog atop a telephone box in space" style="width: 100%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="../images/arrow-tardis2.jpg" alt="A dog atop a telephone box in space" style="width: 100%">
+                            </div>
+                            <div class="column">
+                                <img src="../images/arrow-heart.jpg" alt="A dog atop an artistic interpretation of anatomical heart" style="width: 100%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-full">
+                                <img src="../images/arrow-eye.jpg" alt="A large eye with a dog on the lower lid" style="width: 100%">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                </div>
+            </section>
+            <section id="photos">
+                <h2>Photographs</h2>
                 <article>
                     <p>
-                        Due to his striking appearance and commanding presence, Arrow is the subject of numerous works of art, known throughout art circles as arrow-works. 
-                        Arrow-works are unconstrained by stylistic limitations, ranging from whimsicle to unsettling. An exploration of Arrow-works is an exploration of self as you seek to unravel the mysteries of our subject's enigmatic countenance.
-                        We hope you enjoy browsing this selection of of Arrow-work as much as we enjoyed creating it.
+                        Arrow is the subject of numerous photographs, both professional and recreational. Below is a selection of some favorite Arrow photographs.
                     </p>
                 </article>
-                <section id="gallery-imgs">
+                <section id="photo-imgs">
                     <div class="row">
                         <div class="column">
-                            <img src="../images/arrow-deco.jpg" alt="A dog wearing a bowtie with a swirled background" style="width: 100%">
+                            <img src="../images/sleepy.jpg" alt="A dog rubs its eyes with its paws" style="width: 100%">
                         </div>
                         <div class="column">
-                            <img src="../images/arrow-tardis1.jpg" alt="A dog atop a telephone box in space" style="width: 100%">
+                            <img src="../images/BrainHack-10.jpg" alt="A small brown and white dog looks at us" style="width: 100%">
                         </div>
                     </div>
                     <div class="row">
                         <div class="column">
-                            <img src="../images/arrow-tardis2.jpg" alt="A dog atop a telephone box in space" style="width: 100%">
+                            <img src="../images/batdog.jpg" alt="A small dog in a Batman cape" style="width: 100%">
                         </div>
                         <div class="column">
-                            <img src="../images/arrow-heart.jpg" alt="A dog atop an artistic interpretation of anatomical heart" style="width: 100%">
+                            <img src="../images/arrow-blanket.jpg" alt="A dogs face peeks out of a brown blanket" style="width: 100%">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column-full">
-                            <img src="../images/arrow-eye.jpg" alt="A large eye with a dog on the lower lid" style="width: 100%">
+                        <div class="column">
+                            <img src="../images/BrainHack-13.jpg" alt="A small brown and white dog looks at the camera" style="width: 100%">
                         </div>
+                    </div>
+                    <div style="padding: 2em 0 6em 0; text-align: center;">
+                        <a href="#gallery">Top of page</a>
                     </div>
                 </section>
+                
             </section>
-            </div>
         <footer class="footer">
             <div class="divfoot-left">
                 <p>Copyright © 2020, <a href="https://kdestasio.github.io/">
