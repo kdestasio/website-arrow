@@ -27,6 +27,8 @@ h1 {
 h2 {
     font-size: 30px;
     font-family: 'Josefin Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(153, 162, 180, .5);
+    padding: 1em .5em;
 }
 
 h3 {
@@ -62,6 +64,11 @@ h3 {
 .column {
     float: left;
     width: 45.5%;
+    padding: 5px;
+  }
+  .column-3 {
+    float: left;
+    width: 32.3%;
     padding: 5px;
   }
   .column-full {
